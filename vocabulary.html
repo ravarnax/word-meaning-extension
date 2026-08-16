@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Vocabulary</title>
+  <link rel="stylesheet" href="vocabulary.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <h1>📚 My Vocabulary</h1>
+      <p>Words you've discovered while browsing.</p>
+    </div>
+
+    <button id="clear-history">
+      Clear History
+    </button>
+  </header>
+
+  <div class="stats" id="stats"></div>
+
+  <div class="controls">
+    <input
+      id="search"
+      type="text"
+      placeholder="Search your vocabulary..."
+    >
+
+    <select id="filter">
+      <option value="all">All words</option>
+      <option value="saved">Saved words</option>
+      <option value="frequent">Most searched</option>
+      <option value="recent">Recently searched</option>
+    </select>
+  </div>
+
+  <main id="word-list"></main>
+
+  <script src="vocabulary.js"></script>
+
+</body>
+</html>
